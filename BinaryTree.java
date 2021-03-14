@@ -94,10 +94,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     * prints (using post-order traversal) all nodes in the "whole" tree */
    public void postorderTraverse()
    {
-<<<<<<< HEAD
-=======
       postorderTraverse(root);
->>>>>>> aac351b0845dee13ccaf6172cd3f4931997bc46f
    }
    
    /** A Recursive Method in the BinaryTree Class   
@@ -181,7 +178,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
                 continue; 
             numberOfNodes(k ,i); 
             listOfNodes[i] += listOfNodes[k]; 
-        }       
+        }       */
       return 0;
    } // end getNumberOfNodes
    
