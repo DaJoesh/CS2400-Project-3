@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class BinaryTree<T> implements BinaryTreeInterface<T>
 {
    private BinaryNode<T> root;
@@ -167,7 +165,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
    @return  The number of nodes in the subtree rooted at this node. */
    private int getNumberOfNodes(BinaryNode<T> node)
    {
-      final int nodes = 8; 
+     /* final int nodes = 8; 
       int listOfNodes[] = new int[nodes];
       ArrayList<Integer> adj[] = new ArrayList[nodes]; 
       publiuc int numberOfNodes(int i, int j)  
