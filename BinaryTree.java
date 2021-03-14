@@ -157,6 +157,12 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
    @return  The number of nodes in the "whole" tree */
    public int getNumberOfNodes()
    {
+      if(root == null)
+            return 0;
+            
+      //int nLeftSubtree = nodesInBTree(root.left);
+      //int nRightSubtree = nodesInBTree(root.right);
+      //return nLeftSubtree + nRightSubtree + 1;
       return 0;
    } // end getNumberOfNodes
    
