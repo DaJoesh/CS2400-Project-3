@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.ArrayList;
 
 public class BinaryTree<T> implements BinaryTreeInterface<T>
 {
@@ -94,38 +94,6 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
     * prints (using post-order traversal) all nodes in the "whole" tree */
    public void postorderTraverse()
    {
-      ArrayList<BinaryNode<T>> tree = new ArrayList<BinaryNode<T>>();
-      tree.add(root);
-      /*BinaryNode<T> rootR = new BinaryNode<T>();
-      rootR = root;
-      BinaryNode<T> rootL = new BinaryNode<T>();
-      if (rootR.getRightChild() != null)
-      {
-      while(rootR.getRightChild() != null)
-      {
-         tree.add(rootR.getRightChild());
-         rootR = rootR.getRightChild();
-      }
-      }
-      else if(rootL.getLeftChild() != null)
-      {
-         rootL = 
-         while(rootL.getLeftChild() != null)
-         {
-            tree.add(rootL.getLeftChild());
-         }
-      }*/
-      BinaryNode<T> temp = new BinaryNode<T>();
-      temp = root;
-      while(temp.hasLeftChild() != false)
-      {
-         temp = temp.getLeftChild();
-      }
-      while(temp.hasRightChild() != false)
-      {
-         temp = temp.getRightChild();
-      }
-      tree.add(temp);
    }
    
    /** A Recursive Method in the BinaryTree Class   
@@ -192,6 +160,18 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
    @return  The number of nodes in the subtree rooted at this node. */
    private int getNumberOfNodes(BinaryNode<T> node)
    {
+      final int nodes = 8; 
+      int listOfNodes[] = new int[nodes];
+      ArrayList<Integer> adj[] = new ArrayList[nodes]; 
+      publiuc int numberOfNodes(int i, int j)  
+        listOfNodes[i] = 1; 
+        for(Integer k: adj[i]) 
+        { 
+            if(k == j) 
+                continue; 
+            numberOfNodes(k ,i); 
+            listOfNodes[i] += listOfNodes[k]; 
+        }       
       return 0;
    } // end getNumberOfNodes
    
