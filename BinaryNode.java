@@ -1,4 +1,3 @@
-import java.util.*;
 class BinaryNode<T>
 {
    private T             data;
@@ -107,9 +106,13 @@ class BinaryNode<T>
     * prints (using post-order traversal) all nodes of the subtree rooted at "this" node */
    public void postorderTraverse_binaryNodeMethod()
    {
-      getLeftChild().postorderTraverse_binaryNodeMethod();
-      getRightChild().postorderTraverse_binaryNodeMethod();
-      System.out.println(getData());
+      if(this.leftChild != null)
+      this.leftChild.postorderTraverse_binaryNodeMethod();
+
+      if(this.rightChild != null)
+      this.rightChild.postorderTraverse_binaryNodeMethod();
+
+      System.out.println(this.getData());
    }
    
    /**-------------------------------------------------------------------- 

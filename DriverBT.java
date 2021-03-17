@@ -63,15 +63,15 @@ public class DriverBT
 
 		tree.setTree("A", bTree, cTree);
 		
-      System.out.println("\nGiven Tree:\n");
-      System.out.println("     A      ");
-      System.out.println("   /   \\  ");
-      System.out.println("  B     C  ");
-      System.out.println(" / \\   /  ");
-      System.out.println("D   E  F   ");
-      System.out.println("        \\ ");
-      System.out.println("         G ");
-      System.out.println();
+      	System.out.println("\nGiven Tree:\n");
+      	System.out.println("     A      ");
+      	System.out.println("   /   \\  ");
+      	System.out.println("  B     C  ");
+      	System.out.println(" / \\   /  ");
+      	System.out.println("D   E  F   ");
+      	System.out.println("        \\ ");
+      	System.out.println("         G ");
+      	System.out.println();
 	} // end createTree
 	
 	/**-------------------------------------------------------------------- */
