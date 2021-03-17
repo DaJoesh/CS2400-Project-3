@@ -160,11 +160,7 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
    {
       if(root == null)
             return 0;
-            
-      //int nLeftSubtree = nodesInBTree(root.left);
-      //int nRightSubtree = nodesInBTree(root.right);
-      //return nLeftSubtree + nRightSubtree + 1;
-      return 0;
+      return getNumberOfNodes(root);
    } // end getNumberOfNodes
    
    /** A Recursive Method in the BinaryTree Class   
@@ -175,10 +171,10 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
      int leftNumber = 0;
      int rightNumber = 0;
       if(node.getLeftChild() != null)
-         leftNumber = node.getLeftChild().getNumberOfNodes();
+         leftNumber = getNumberOfNodes(node.getLeftChild());
 
       if(node.getRightChild() != null)
-         rightNumber = node.getRightChild().getNumberOfNodes();
+         rightNumber = getNumberOfNodes(node.getLeftChild());
       return 1+ leftNumber +rightNumber;
    } // end getNumberOfNodes
    
