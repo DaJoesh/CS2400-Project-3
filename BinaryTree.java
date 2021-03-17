@@ -172,19 +172,14 @@ public class BinaryTree<T> implements BinaryTreeInterface<T>
    @return  The number of nodes in the subtree rooted at this node. */
    private int getNumberOfNodes(BinaryNode<T> node)
    {
-     /* final int nodes = 8; 
-      int listOfNodes[] = new int[nodes];
-      ArrayList<Integer> adj[] = new ArrayList[nodes]; 
-      publiuc int numberOfNodes(int i, int j)  
-        listOfNodes[i] = 1; 
-        for(Integer k: adj[i]) 
-        { 
-            if(k == j) 
-                continue; 
-            numberOfNodes(k ,i); 
-            listOfNodes[i] += listOfNodes[k]; 
-        }       */
-      return 0;
+     int leftNumber = 0;
+     int rightNumber = 0;
+      if(node.getLeftChild() != null)
+         leftNumber = node.getLeftChild().getNumberOfNodes();
+
+      if(node.getRightChild() != null)
+         rightNumber = node.getRightChild().getNumberOfNodes();
+      return 1+ leftNumber +rightNumber;
    } // end getNumberOfNodes
    
    /** The following calls getNumberOfNodes_binaryNodeMethod() which is a recursive binaryNode class method
