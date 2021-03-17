@@ -2,6 +2,7 @@ public class DriverBT
 {
 	public static void main(String[] args)
 	{
+		//first test
 		System.out.println("1st Testing Example:");
 		BinaryTree<String> aTree = new BinaryTree<>();
 		createTree1(aTree);
@@ -84,8 +85,8 @@ public class DriverBT
 		BinaryTree<String> hTree = new BinaryTree<>("H");
 
 		// Subtrees:
-		BinaryTree<String> dTree = new BinaryTree<>("D",fTree, null);
-		BinaryTree<String> eTree = new BinaryTree<>("E",gTree, hTree);
+		BinaryTree<String> dTree = new BinaryTree<>("D", fTree, null);
+		BinaryTree<String> eTree = new BinaryTree<>("E", gTree, hTree);
 		BinaryTree<String> cTree = new BinaryTree<>("C", dTree, eTree);
 
 		tree.setTree("A", bTree, cTree);
