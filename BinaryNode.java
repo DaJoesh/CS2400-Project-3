@@ -140,5 +140,13 @@ class BinaryNode<T>
 	     rightNumber = rightChild.getNumberOfNodes_binaryNodeMethod();
 	  return 1 + leftNumber + rightNumber;
 	} // end getNumberOfNodes
+
+public int getNumberOfNodes() {
+    return 0;
+}
+
+public int getNumberOfNodes() {
+    return 0;
+}
 	
 } // end BinaryNode
