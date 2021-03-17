@@ -88,6 +88,8 @@ public class DriverBT
 		BinaryTree<String> eTree = new BinaryTree<>("E",gTree, hTree);
 		BinaryTree<String> cTree = new BinaryTree<>("C", dTree, eTree);
 
+		tree.setTree("A", bTree, cTree);
+
 		
 
 
