@@ -134,8 +134,7 @@ public class DriverBT
 		System.out.println("	/	\\	");
 		System.out.println(" null	 null");
 
-
-<<<<<<< HEAD
+	}
 	//unit test: a tree with only left node
 	public static void createLeftTree(BinaryTree<String> tree)
 	{
@@ -171,8 +170,6 @@ public class DriverBT
 
 		tree.setTree("A", bTree, cTree);
 	}//end create3NodeTree
-=======
-	} // end createUninitializedTree
 	
 	public static void createEmptyTree(BinaryTree<String> tree)
 	{
@@ -188,6 +185,5 @@ public class DriverBT
 		root.setData("A");
 		tree.setRootNode(root);
 	}//end createRootOnly
->>>>>>> 1035c21303ba1cf3b688e333e6c9eeda048a62ff
 
 }  // end DriverBT
