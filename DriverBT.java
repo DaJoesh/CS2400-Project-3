@@ -135,20 +135,40 @@ public class DriverBT
 
 	} // end createTree2
 
-	public static void createUnitTests(BinaryTree<String> tree)
+	//unit test: a tree with only left node
+	public static void createLeftTree(BinaryTree<String> tree)
 	{
-		//empty tree
+		//leaves
+		BinaryTree<String> dTree = new BinaryTree<>("D");
 
-		//uninitialized tree
+		//Subtrees
+		BinaryTree<String> cTree = new BinaryTree<>("C", dTree, null);
+		BinaryTree<String> bTree = new BinaryTree<>("B", cTree, null);
 
-		//only left side tree
+		tree.setTree("A", bTree, null);
+	}//end createLeftTree
 
-		//only right side tree
+	//unit test: a tree with only right node
+	public static void createRightTree(BinaryTree<String> tree)
+	{
+		//leaves
+		BinaryTree<String> dTree = new BinaryTree<>("D");
+	
+		//Subtrees
+		BinaryTree<String> cTree = new BinaryTree<>("C", null, dTree);
+		BinaryTree<String> bTree = new BinaryTree<>("B", null, cTree);
+	
+		tree.setTree("A", null, bTree);
+	}//end createRightTree
+	
+	//unit test: tree with 3 nodes
+	public static void create3NodeTree(BinaryTree<String> tree)
+	{
+		//leaves
+		BinaryTree<String> bTree = new BinaryTree<>("B");
+		BinaryTree<String> cTree = new BinaryTree<>("C");
 
-		//tree with 3 nodes
-
-		//tree with just root
-		
-	}
+		tree.setTree("A", bTree, cTree);
+	}//end create3NodeTree
 
 }  // end DriverBT
