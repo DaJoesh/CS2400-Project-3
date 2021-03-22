@@ -101,7 +101,22 @@ public class DriverBT
       	System.out.println("    F     G    H");
       	System.out.println();
 
-
 	} // end createTree2
+
+	public static void createUnitTests(BinaryTree<String> tree)
+	{
+		//empty tree
+
+		//uninitialized tree
+
+		//only left side tree
+
+		//only right side tree
+
+		//tree with 3 nodes
+
+		//tree with just root
+		
+	}
 
 }  // end DriverBT
