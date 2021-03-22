@@ -50,7 +50,7 @@ public class DriverBT
 
 		System.out.println("3rd Testing Example:");
 		BinaryTree<String> aTree3 = new BinaryTree<>();
-		createTree3(aTree3);
+		createUninitializedTree(aTree3);
 		
 		System.out.println("(binaryTree) post-order: ");
 		aTree3.postorderTraverse();
@@ -126,7 +126,7 @@ public class DriverBT
 
 	} // end createTree2
 	
-	public static void createTree3(BinaryTree<String> tree)
+	public static void createUninitializedTree(BinaryTree<String> tree)
 	{ 
 		tree.setTree(null, null, null);
 
