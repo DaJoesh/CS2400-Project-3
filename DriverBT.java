@@ -116,7 +116,7 @@ public class DriverBT
 		//3 Nodes Only Tree
 		System.out.println("3 nodes only:");
 		BinaryTree<String> threeNodesTree = new BinaryTree<>();
-		createUninitializedTree(threeNodesTree);
+		create3NodeTree(threeNodesTree);
 		
 		System.out.println("(binaryTree) post-order: ");
 		threeNodesTree.postorderTraverse();
