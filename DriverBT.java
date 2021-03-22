@@ -50,7 +50,7 @@ public class DriverBT
 
 		System.out.println("3rd Testing Example:");
 		BinaryTree<String> aTree3 = new BinaryTree<>();
-		createTree3(aTree3);
+		createUninitializedTree(aTree3);
 		
 		System.out.println("(binaryTree) post-order: ");
 		aTree3.postorderTraverse();
@@ -125,16 +125,17 @@ public class DriverBT
 
 	} // end createTree2
 	
-	public static void createTree3(BinaryTree<String> tree)
+	public static void createUninitializedTree(BinaryTree<String> tree)
 	{ 
 		tree.setTree(null, null, null);
 
 		System.out.println("\nGiven Tree:\n");
-      	System.out.println();
+      	System.out.println("	null	");
+		System.out.println("	/	\\	");
+		System.out.println(" null	 null");
 
 
-	} // end createTree2
-
+<<<<<<< HEAD
 	//unit test: a tree with only left node
 	public static void createLeftTree(BinaryTree<String> tree)
 	{
@@ -170,5 +171,23 @@ public class DriverBT
 
 		tree.setTree("A", bTree, cTree);
 	}//end create3NodeTree
+=======
+	} // end createUninitializedTree
+	
+	public static void createEmptyTree(BinaryTree<String> tree)
+	{
+		tree.clear();
+		
+		System.out.println("\nGiven Tree:\n");
+		System.out.println();
+	}//end createEmptyTree
+	
+	public static void createRootOnly(BinaryTree<String> tree)
+	{
+		BinaryNode<String> root = new BinaryNode<String>();
+		root.setData("A");
+		tree.setRootNode(root);
+	}//end createRootOnly
+>>>>>>> 1035c21303ba1cf3b688e333e6c9eeda048a62ff
 
 }  // end DriverBT
