@@ -130,25 +130,26 @@ public class DriverBT
 		tree.setTree(null, null, null);
 
 		System.out.println("\nGiven Tree:\n");
-      	System.out.println();
+      	System.out.println("	null	");
+		System.out.println("	/	\\	");
+		System.out.println(" null	 null");
 
 
 	} // end createTree2
 
-	public static void createUnitTests(BinaryTree<String> tree)
+	public static void createEmptyTree(BinaryTree<String> tree)
 	{
-		//empty tree
-
-		//uninitialized tree
-
-		//only left side tree
-
-		//only right side tree
-
-		//tree with 3 nodes
-
-		//tree with just root
+		tree.clear();
 		
+		System.out.println("\nGiven Tree:\n");
+		System.out.println();
+	}
+	
+	public static void createRootOnly(BinaryTree<String> tree)
+	{
+		BinaryNode<String> root = new BinaryNode<String>();
+		root.setData("A");
+		tree.setRootNode(root);
 	}
 
 }  // end DriverBT
