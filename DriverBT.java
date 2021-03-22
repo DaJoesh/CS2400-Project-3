@@ -135,21 +135,21 @@ public class DriverBT
 		System.out.println(" null	 null");
 
 
-	} // end createTree2
-
+	} // end createUninitializedTree
+	
 	public static void createEmptyTree(BinaryTree<String> tree)
 	{
 		tree.clear();
 		
 		System.out.println("\nGiven Tree:\n");
 		System.out.println();
-	}
+	}//end createEmptyTree
 	
 	public static void createRootOnly(BinaryTree<String> tree)
 	{
 		BinaryNode<String> root = new BinaryNode<String>();
 		root.setData("A");
 		tree.setRootNode(root);
-	}
+	}//end createRootOnly
 
 }  // end DriverBT
