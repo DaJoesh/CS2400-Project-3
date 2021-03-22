@@ -47,6 +47,28 @@ public class DriverBT
 		System.out.println("(BinaryNode) # nodes of tree is " + aTree2.getNumberOfNodes_callBinaryNodeMethod());
 		
 		System.out.println("Done.");
+
+		System.out.println("3rd Testing Example:");
+		BinaryTree<String> aTree3 = new BinaryTree<>();
+		createTree3(aTree3);
+		
+		System.out.println("(binaryTree) post-order: ");
+		aTree3.postorderTraverse();
+		
+		System.out.println("(binaryNode) post-order: ");
+		aTree3.postorderTraverse_callBinaryNodeMethod();
+		
+		System.out.println();
+		
+		System.out.println("(BinaryTree) Height of tree is " + aTree3.getHeight());
+		System.out.println("(BinaryNode) Height of tree is " + aTree3.getHeight_callBinaryNodeMethod());
+		
+		System.out.println();
+		
+		System.out.println("(BinaryTree) # nodes of tree is " + aTree3.getNumberOfNodes());
+		System.out.println("(BinaryNode) # nodes of tree is " + aTree3.getNumberOfNodes_callBinaryNodeMethod());
+		
+		System.out.println("Done.");
 	}  // end main
 
 	public static void createTree1(BinaryTree<String> tree)
@@ -99,6 +121,16 @@ public class DriverBT
       	System.out.println("       D    E");
      	System.out.println("     /     /  \\ ");
       	System.out.println("    F     G    H");
+      	System.out.println();
+
+
+	} // end createTree2
+	
+	public static void createTree3(BinaryTree<String> tree)
+	{ 
+		tree.setTree(null, null, null);
+
+		System.out.println("\nGiven Tree:\n");
       	System.out.println();
 
 
